@@ -27,11 +27,15 @@ android {
             resValue("string","app_token","token_release")
             resValue("bool","rel","false")
             resValue("integer","num","0")
+
+            resValue("string","app_token_properties","${TOKEN}")
         }
         debug{
             resValue("string","app_token","token_debug")
             resValue("bool","rel","true")
             resValue("integer","num","1")
+
+            resValue("string","app_token_properties","${TOKEN}")
         }
     }
     compileOptions {

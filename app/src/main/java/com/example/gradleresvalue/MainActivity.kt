@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         stringBuffer.append(resources.getString(R.string.app_token)).append("\n")
             .append(resources.getBoolean(R.bool.rel)).append("\n")
             .append(resources.getInteger(R.integer.num)).append("\n")
+            .append("\n from gradle.properties = ${resources.getString(R.string.app_token_properties)}")
 
         bingding.tv.text = stringBuffer.toString()
     }
